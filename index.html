@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Story, Beautifully Told</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Your Story, Beautifully Told</h1>
+            <p>Craft a resume that captures your unique journey and opens doors to your future</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="form-section">
+                <form id="resumeForm">
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h2 class="step-title">Who are you?</h2>
+                        </div>
+                        <p class="step-subtitle">Let's start with your name — the first chapter of your story</p>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Jane Smith" required>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h2 class="step-title">Your Professional Identity</h2>
+                        </div>
+                        <p class="step-subtitle">In a few sentences, what makes you unique?</p>
+                        <label for="summary">Professional Summary</label>
+                        <textarea id="summary" placeholder="Passionate data analyst with 5 years of experience transforming complex datasets into actionable insights. Skilled in Python, SQL, and data visualization, with a proven track record of driving business decisions through analytics..." required></textarea>
+                        <p class="hint">Tip: Focus on what you bring to the table and what drives you</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h2 class="step-title">Your Superpowers</h2>
+                        </div>
+                        <p class="step-subtitle">What skills make you stand out?</p>
+                        <label for="skillInput">Add Your Skills</label>
+                        <div class="skill-input-wrapper">
+                            <input type="text" id="skillInput" placeholder="Type a skill and press Enter">
+                            <p class="hint">Press Enter after each skill to add it</p>
+                        </div>
+                        <div class="skills-container" id="skillsContainer"></div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <h2 class="step-title">Your Journey</h2>
+                        </div>
+                        <p class="step-subtitle">Share the experiences that shaped your professional path</p>
+                        <label for="experience">Professional Experience</label>
+                        <textarea id="experience" placeholder="Senior Data Analyst | ABC Company | 2020-Present&#10;• Led team of 3 analysts in developing automated reporting dashboards&#10;• Increased operational efficiency by 30% through predictive modeling&#10;&#10;Data Analyst | XYZ Corp | 2018-2020&#10;• Built data pipelines processing 1M+ records daily&#10;• Created visualizations that informed executive decision-making" rows="10" required></textarea>
+                        <p class="hint">Include job titles, dates, and key achievements</p>
+                    </div>
+
+                    <button type="submit" class="generate-btn"><span>✨ Bring My Resume to Life</span></button>
+                </form>
+            </div>
+
+            <div class="preview-section">
+                <div class="preview-header">
+                    <h2>✨ Live Preview</h2>
+                    <p style="color: #999; font-size: 0.9em;">Watch your story unfold in real-time</p>
+                </div>
+                <div class="preview-content" id="previewContent">
+                    <div class="empty-state">
+                        <p>Your resume will appear here as you fill in your details.</p>
+                        <p style="margin-top: 10px;">Start by sharing your name above! 👆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
