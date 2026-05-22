@@ -1,4 +1,3 @@
-# resume
 # AI Resume & Cover Letter Generator 🚀
 
 A responsive, client-side web application that leverages generative AI to instantly craft ATS-optimized resumes and cover letters tailored specifically to any given job description. 
